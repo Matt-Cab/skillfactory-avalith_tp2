@@ -1,0 +1,57 @@
+main {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
+    width: 100%;
+}
+
+.submit-btn {
+    display: block;
+    margin-inline: auto;
+}
+
+.comments-input {
+    resize: none;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.input {
+    padding: 10px;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: box-shadow .3s ease;
+}
+
+.input:focus {
+    outline: 2px solid var(--color-gradient-1);
+    box-shadow: 1px 0px 16px 0px rgba(0, 100, 122,0.75);
+        -webkit-box-shadow: 1px 0px 16px 0px rgba(0, 100, 122,0.75);
+        -moz-box-shadow: 1px 0px 16px 0px rgba(0, 100, 122,0.75);
+}
+
+.input-container > label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.input.error {
+    outline: 2px solid rgb(211, 12, 12);
+    box-shadow: 1px 0px 16px 0px rgba(122, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 0px 16px 0px rgba(122, 0, 0, 0.75);
+        -moz-box-shadow: 1px 0px 16px 0px rgba(122, 0, 0, 0.75);
+}
