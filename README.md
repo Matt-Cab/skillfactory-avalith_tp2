@@ -17,7 +17,7 @@ npm run start
 
 ### General
 
-Aprobechando
+Aprovechando el poder de React para la construcción de componentes, se dividió a las páginas en partes para facilitar el desarrollo de sus funcionalidades.
 
 ### Form
 
