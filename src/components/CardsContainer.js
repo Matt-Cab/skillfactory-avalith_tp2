@@ -5,7 +5,7 @@ import PageChanger from './PageChanger.js';
 
 function CardsContainer() {
     const [pageNumber, setPageNumber] = useState(1);
-    const [characters, setCharacters] = useState({results: [], info: {pages: 0}});
+    const [characters, setCharacters] = useState({ results: [], info: { pages: 0 } });
 
     const fetchCharacters = async (url) => {
         try {
@@ -53,17 +53,18 @@ function CardsContainer() {
 
     return (
         <>
-        <h1 className='main-title'>Cards</h1>
+            <h1 className='main-title'>Cards</h1>
             <div id="cards-container" className="cards-container">
                 {characters.results.map(character => {
                     return (
                         <Card
+                            id={character.id}
                             key={character.id}
                             image={character.image}
                             name={character.name}
                             status={character.status}
                             species={character.species}
-                            gender={character.gender}
+                            // gender={character.gender}
                             origin={character.origin.name}
                             location={character.location.name}
                         />

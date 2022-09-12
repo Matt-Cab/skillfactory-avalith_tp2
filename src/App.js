@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Home from "./components/Home";
 import TableContainer from "./components/TableContainer";
+import SingleCharacterCard from "./components/SingleCharacterCard";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
           <Route
             path="/cards"
             element={<CardsContainer />}
+          />
+          <Route
+            path="/cards/:id"
+            element={<SingleCharacterCard />}
           />
         </Routes>
       </main>
